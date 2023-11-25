@@ -28,7 +28,7 @@ interface LoggerInterface
      *
     •	@return string
      */
-    public function getType(): string;
+    public function getType(): int;
 
     /**
     •	Sets current logger type.

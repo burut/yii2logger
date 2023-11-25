@@ -20,7 +20,7 @@ class LoggerFile implements LoggerInterface
         // TODO need to ask for more details how it should work????
     }
 
-    public function getType(): string
+    public function getType(): int
     {
         return LoggerFactory::getLoggerTypeFile();
     }
