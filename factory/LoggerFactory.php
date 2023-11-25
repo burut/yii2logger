@@ -35,8 +35,7 @@ class LoggerFactory
         self::LOGGER_TYPE_FILE,
         self::LOGGER_TYPE_DB,
     ];
-
-    // **********************************************************
+    // TODO end ******************************************************
 
     public static function getLogger(int $loggerType): LoggerInterface
     {
@@ -60,20 +59,6 @@ class LoggerFactory
         }
     }
 
-//    public static function loggerTypes(int $type): array
-//    {
-//        if (!in_array($type, self::LOGGER_TYPES, true)) {
-//
-//            return [self::LOGGER_DEFAULT_TYPE];
-//        }
-//
-//        return $type !== self::LOGGER_TYPE_ALL ?
-//            [$type]
-//            :
-//            self::LOGGER_TYPES
-//        ;
-//    }
-
     public static function loggerTypesForAll(): array
     {
         return self::LOGGER_TYPES;
@@ -90,9 +75,6 @@ class LoggerFactory
 
         return $loggerConfig['types'];
     }
-
-
-
 
     public static function getLoggerTypeDefault(): int
     {
@@ -118,11 +100,6 @@ class LoggerFactory
     {
         return self::LOGGER_TYPE_DB;
     }
-
-
-
-
-
 
     public static function getLoggerFilePath(): string
     {

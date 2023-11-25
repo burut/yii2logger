@@ -22,8 +22,6 @@ class LoggerController extends Controller
 
     /**
      * Sends a log message to the default logger.
-     *
-     * @return void
      */
     private function log(string $message): void
     {
